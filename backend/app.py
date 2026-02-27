@@ -1,11 +1,1 @@
-from fastapi import FastAPI
-
-app = FastAPI()
-
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the Mobile AI Builder!"}
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app, host='0.0.0.0', port=8000)
+from fastapi import FastAPI\n\napp = FastAPI()\n\n@app.post("/generate_code/")\ndef generate_code(prompt: str):\n    # Claude API integration logic would go here\n    return {"code": "Generated code based on the prompt: " + prompt}
