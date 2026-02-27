@@ -1,3 +1,6 @@
 fastapi
-claude-api
+uvicorn
+anthropic
 sqlalchemy
+pydantic
+python-dotenv
